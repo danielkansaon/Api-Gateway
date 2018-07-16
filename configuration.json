@@ -1,0 +1,32 @@
+{  
+    "ReRoutes": [
+      {
+        "DownstreamPathTemplate": "/api/publico/v1/livro",
+        "DownstreamScheme": "http",
+        "DownstreamHost": "localhost",
+        "DownstreamPort": 5000,
+        "UpstreamPathTemplate": "/api/publico/v1/livro",
+        "UpstreamHttpMethod": [ "Get" ]
+      },  
+      {  
+        "DownstreamPathTemplate": "/publico/v1/auditoria/{idusuario}",  
+         "DownstreamScheme": "http",  
+         "DownstreamHost": "localhost",  
+         "DownstreamPort": 9000,  
+         "UpstreamPathTemplate": "/publico/v1/auditoria/{idusuario}",  
+         "UpstreamHttpMethod": [ "Get" ]  
+      },  
+        {  
+         "DownstreamPathTemplate": "public/v1/api/cartao_credito/{idusuario}/{numerocartao}",  
+         "DownstreamScheme": "http",  
+         "DownstreamPort": 9002,  
+         "DownstreamHost": "localhost",  
+         "UpstreamPathTemplate": "public/v1/api/cartao_credito/{idusuario}/{numerocartao}",  
+         "UpstreamHttpMethod": [ "Get" ]  
+        }  
+    ],  
+    "GlobalConfiguration": {  
+        "RequestIdKey": "OcRequestId",  
+        "AdministrationPath": "/administration"  
+    }  
+}

@@ -1,7 +1,13 @@
 # Api-Gateway
 O repositório consiste em uma Api Gateway construída com o Ocelot
 
-Link Lambda Function: https://
+Link Lambda Function: https://pwluie8j51.execute-api.us-east-1.amazonaws.com/Test/logAuditoria
+
+Onde é necessário fornecer os parâmetros:
+  - action
+  - nome
+  
+Exemplo: https://pwluie8j51.execute-api.us-east-1.amazonaws.com/Test/logAuditoria<b>?action=compra&nome=daniel</b>
 
 <b>Documentação API-Gateway</b>
 
